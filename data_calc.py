@@ -14,6 +14,7 @@ def load_data():
     # Load GeoJSON
     geojson_url = "https://gist.github.com/curran/49fa25fc44c84fcbebb51e60946145a4/raw/d7a115cc604b1e7fdc0afec874babd1025b86215/INDIA_DISTRICTS_TOPO.json"
     gdf_districts = gpd.read_file(geojson_url)
+    print(gdf_districts.head())
     gdf_districts.rename(columns={'dtname': 'district', 'stname': 'state', 'stcode11': 'st_code', 'dtcode11': 'dt_code'}, inplace=True)
     gdf_districts.set_crs(epsg=4326, inplace=True)
 
