@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import geopandas as gpd
-import rasterio
-from rasterio.mask import mask
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
