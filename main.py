@@ -20,6 +20,7 @@ def format_value(value, col_name, pct_cols):
         return str(value)
 
 def main():
+    st.image("raw_data/WealthGame Logo Square.svg", width=100)
     # Load data
     data = load_data()
     st.title("India District Wealth Dashboard")
